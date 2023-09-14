@@ -4,17 +4,19 @@ const validator = require('validator');
 const Schema = mongoose.Schema;
 
 const PersonSchema = new Schema({
-    firstName: {
-        type: String,
-        required: [true, 'First name is required'],
-        minlength: [3, 'First name must be at least 3 characters'],
-        maxlength: [20, 'First name must be less than 20 characters']
-    },
-    lastName: {
-        type: String,
-        required: [true, 'Last name is required'],
-        minlength: [3, 'Last name must be at least 3 characters'],
-        maxlength: [20, 'Last name must be less than 20 characters']
+    Name: {
+        firstName: {
+            type: String,
+            required: [true, 'First name is required'],
+            minlength: [3, 'First name must be at least 3 characters'],
+            maxlength: [20, 'First name must be less than 20 characters']
+        },
+        lastName: {
+            type: String,
+            required: [true, 'Last name is required'],
+            minlength: [3, 'Last name must be at least 3 characters'],
+            maxlength: [20, 'Last name must be less than 20 characters']
+        }
     },
     Gender: {
         type: String,
