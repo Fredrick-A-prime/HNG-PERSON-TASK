@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const { DB_URL } = require('./props');
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const PersonRoutes = require('./routes/PersonRoutes');
