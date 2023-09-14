@@ -1,3 +1,3 @@
 node_modules/
-props.js
+.env
 package-lock.json
