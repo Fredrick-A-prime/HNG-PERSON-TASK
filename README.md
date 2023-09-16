@@ -27,16 +27,12 @@ Before you begin, ensure you have met the following requirements:
 The API provides the following endpoints for CRUD operations:
 
 POST /api - Create a new person:
-To create a new person, send a POST request to /api with a JSON request body "Name":{
-        "firstName": " ",
-        "lastName": " "
-        },
-    "Gender": " ",
-    "Email": " "
-
-GET /api/user_id - Fetch details of a person by user ID or any query parameters from the model.
-PUT /api/user_id - Update details of an existing person by user ID or query parameters from the model.
-DELETE /api/user_id - Remove a person by user ID query parameters from the model.
+To create a new person, send a POST request to /api with a JSON request body eg {
+    "Name": "Mark Essen"
+}
+GET /api/user_id - Fetch details of a person by name.
+PUT /api/user_id - Update details of an existing person by query.
+DELETE /api/user_id - Remove a person by query.
 
 ## Documentation
 For detailed information on how to use the API, refer to the https://api.postman.com/collections/26809218-5d4d14f1-acab-441e-a3dd-2fd2fa268d14?access_key=PMAT-01HA981T19F87694HMP22VA4W8. It includes standard request/response formats, sample usage, known limitations, and setup instructions.
